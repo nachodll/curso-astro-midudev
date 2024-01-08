@@ -14,7 +14,7 @@ import HeaderButton from "./HeaderButton.astro";
   </div>
 
   <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
-    <HeaderButton class="text-white" href="/">
+    <HeaderButton ref="/" class="text-white" href="/">
       Últimos lanzamientos
       <svg 
         slot="before"
@@ -28,7 +28,7 @@ import HeaderButton from "./HeaderButton.astro";
         <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
       </svg>
     </HeaderButton>
-    <HeaderButton class="text-white" href="/about">
+    <HeaderButton ref="/about" class="text-white" href="/about">
       Sobre el proyecto
       <svg 
         slot="before"
@@ -41,7 +41,7 @@ import HeaderButton from "./HeaderButton.astro";
         <path d="M12 9h.01" /><path d="M11 12h1v4h1" />
       </svg>
     </HeaderButton>
-    <HeaderButton class="text-white" href="/oldest">
+    <HeaderButton ref="/" class="text-white" href="/oldest">
       Los más viejos
       <svg 
         slot="before"

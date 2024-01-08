@@ -6,7 +6,6 @@ const launches = await getLatestLaunches()
 ---
 
 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-  <article>
     {
       launches.map((launch) => (
         <CardLaunch
@@ -19,5 +18,4 @@ const launches = await getLatestLaunches()
         />
       ))
     }
-  </article>
 </div>
